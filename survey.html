@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="survey">
+    <h1 id="title">Encuesta de satisfacción</h1>
+    <p id="description">Tus comentarios son importantes para seguir mejorando nuestros productos</p>
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label" for="name" class="mandatory">Ingresar Nombre Completo:</label>
+    <label><input id="name" type="text" name="name" required placeholder="Juan Perez">
+    </label>
+    <label id="email-label" for="email" class="mandatory">Ingresar Correo Electrónico:</label>
+    <label><input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="juan.perez@site.com">
+    </label>
+    <label id="number-label" for="number" class="mandatory">Número de Orden:</label>
+    <label><input id="number" type="number" name="number" min="100000" max="999999" placeholder="123456">
+    <!-- en pattern="\d{5}", \d es para "digit" o solo números y {5} para que sean exactamente 5-->
+    </label>
+</fieldset>
+<fieldset>
+    <label class="question" for="dropdown">Cómo te enteraste de nosotros?</label>
+      <label><select id="dropdown" name="dropdown">
+        <option class="check" value="">Seleccione una</option>
+        <option class="check" value="1">Youtube</option>
+        <option class="check" value="2">Facebook</option>
+        <option class="check" value="3">Instagram</option>
+        <option class="check" value="4">Tiktok</option>
+        <option class="check" value="5">Orta</option>
+      </select>
+    </label>
+    </fieldset>
+    <fieldset>
+      <label class="question" for="button">Sobre el producto adquirido </label>
+      <label for="2_button"><input id="2_button" type="radio" name="expected_product" value="2" class="check">Encontré exactamente lo que buscaba</input></label>
+      <label for="1_button"><input id="1_button" type="radio" name="expected_product" value="1" class="check">Encontré algo similar a lo que buscaba</input></label>
+      <label for="0_button"><input id="0_button" type="radio" name="expected_product" value="0" class="check">No encontré  lo que buscaba</input></label>
+    </fieldset>
+    <fieldset>
+      <label class="question" for="checkbox">Seleccione los que apliquen: </label>
+      <label for="checkbox"><input id="falsead" type="checkbox" name="product" value="falsead">El producto se ve como y era lo que esperaba</input></label>
+      <label for="checkbox"><input id="quality" type="checkbox" name="product" value="quality">El producto presenta una buena claidad</input></label>
+      <label for="checkbox"><input id="time" type="checkbox" name="product" value="time">El tiempo de entrega fue el prometido</input></label>
+      <label for="checkbox"><input id="cost-benefit" type="checkbox" name="product" value="cost-benefit">Tiene un precio justo para el producto</input></label>
+    </fieldset>
+    <fieldset>
+    <label class="question" for="text">Cuéntanos tu Experiencia:</label>
+      <label for="text"><textarea id="text" name="text" placeholder="Describe tu experiencia aquí..."></textarea>
+    </label>
+    <input id="submit" type="submit" value="Submit">
+    </fieldset>
+  </form>
+  </div>
+</body>
+</html>

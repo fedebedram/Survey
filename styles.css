@@ -1,0 +1,72 @@
+h1,
+p {
+	text-align: center;
+}
+
+h1 {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+body {
+	background-image: url(https://m.media-amazon.com/images/I/81VbIxDMacL.jpg);
+	background-position: center;
+	position: relative;
+}
+
+.survey {
+	padding: 30px;
+	background-color: #9bac5aEE;
+	font-family: Avenir;
+	width: 60vw;
+	margin: auto;
+	min-width: 300px;
+	max-width: 500px;
+}
+
+fieldset {
+	border: none;
+	padding: 2rem 20;
+	border-bottom: 1.5px solid #3a4920;
+}
+
+label {
+	display: block;
+}
+
+.question {
+	margin-bottom: 10px;
+	margin-top: -15px;
+	font-size: 20px;
+}
+
+.mandatory {
+	margin-bottom: 10px;
+	margin-top: 7px;
+	font-size: 20px;
+}
+
+input[type="submit"] {
+	margin-top: 30px;
+	display: block;
+	width: 100%;
+	height: 2em;
+	font-size: 1rem;
+	background-color: #9bac5a00;
+	border-color: #3a4920;
+	min-width: 250px;
+}
+
+input,
+textarea,
+select {
+	margin: 10px 0 0 0;
+	width: 100%;
+	min-height: 2em;
+	border: 1px solid #3a4920;
+}
