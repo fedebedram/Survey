@@ -2,12 +2,15 @@ body {
 	background-image: url(https://m.media-amazon.com/images/I/81VbIxDMacL.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	position: relative;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
 }
 
 .survey {
 	padding: 30px;
-	background-color: #9bac5aEE;
+	background-color: #9cac5ae0;
 	font-family: Avenir;
 	width: 60vw;
 	margin: auto;
